@@ -53,14 +53,14 @@ function draw() {
   
   trex.collide(invisibleGround);
   
-  //spawn the clouds
+  //aparecer nubes
   spawnClouds();
   
   drawSprites();
 }
 
 function spawnClouds() {
-  //write code here to spawn the clouds
+  //escribir aquí el código para aparecer las nubes 
   if (frameCount % 60 === 0) {
     cloud = createSprite(600,100,40,10);
     cloud.addImage(cloudImage)
@@ -69,10 +69,10 @@ function spawnClouds() {
     cloud.velocityX = -3;
     
     
-    //assigning lifetime to the variable
+    //asignar lifetime a la variable
     cloud.lifetime = 134
     
-    //adjust the depth
+    //ajustar la profundidad
     cloud.depth = trex.depth
     trex.depth = trex.depth + 1;
     }
