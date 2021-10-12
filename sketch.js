@@ -33,7 +33,7 @@ function setup() {
   invisibleGround = createSprite(200,190,400,10);
   invisibleGround.visible = false;
   
-  console.log("Hello"+ 5)
+  console.log("Hola"+ 5)
   
 }
 
